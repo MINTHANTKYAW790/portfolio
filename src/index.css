@@ -51,13 +51,13 @@ a:hover {
     text-underline-offset: 10px;
 }
 .bodyContainer {
-    padding-top: 180px;
+    padding-top: 20%;
     width: 99%;
 }
 
 .home {
     height: 800px;
-    background-image: url("bgimage.jpg");
+    background-color: #101010;
     background-size: cover;
 }
 .homeAtag {
@@ -150,4 +150,9 @@ a:hover {
 }
 .image {
     width: 20%;
+}
+
+.transition {
+    transition: all 0.5s ease;
+    color: #f9004d;
 }

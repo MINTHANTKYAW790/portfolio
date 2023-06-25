@@ -1,7 +1,29 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
+    <script
+        src="https://kit.fontawesome.com/ff5868ab46.js"
+        crossorigin="anonymous"
+    ></script>;
+    var texts = [
+        "HTML, CSS, JAVASCRIPT, TYPESCRIPT",
+        "EXPRESS, NODE, REACT",
+        "BOOSTRAP, MUI",
+    ]; // Array of texts
+    var currentIndex = 0; // Current index of the text array
+
+    function changeText() {
+        var element = document.getElementById("myElement");
+        element.innerHTML = texts[currentIndex];
+
+        // Increment the index
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    setInterval(changeText, 3000); // Change text every 2 seconds
+
     return (
         <div className="App">
             <div id="home" className="home">
@@ -37,23 +59,26 @@ function App() {
                         </a>
                     </div>
                 </div>
+
                 <div className="bodyContainer">
-                    <h3>WELCOME TO MY WORLD</h3>
-                    <h1>HI,I'M MIN THANT KYAW</h1>
-                    <h1>Fullstack Developer</h1>
-                    <h1>based in MYANMAR.</h1>
+                    <h3 style={{ color: "#7F99A4" }}>WELCOME TO MY WORLD</h3>
+                    <h1 style={{ color: "white" }}>HI,I'M MIN THANT KYAW</h1>
+                    <h1 id="myElement" class="transition">
+                        FRONTEND DEVELOPER
+                    </h1>
+                    <h1 style={{ color: "white" }}>
+                        developer based in MYANMAR.
+                    </h1>
                 </div>
-                <h1 className="warning">
-                    This website is still in the developing stage.{" "}
-                </h1>
             </div>
 
             <div id="about" className="about">
                 <div className="aboutContainer">
-                    {/* <img
+                    <img
                         className="image"
-                        src={require("C:/Users/Dell/Documents/projects/frontend/src/haha.JPG")}
-                    /> */}
+                        src={process.env.PUBLIC_URL + "/haha.jpg"}
+                        alt="myImage"
+                    />
 
                     <div className="contentAbout">
                         <h1 style={{ color: "white" }}>About Me</h1>
