@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.menuContainer1 {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 0%;
+    display: flex;
+    background-color: #79838f;
+}
+.menuContainer {
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+}
+.menu {
+    height: 100%;
+    padding-left: 1%;
+}
+a {
+    height: 100%;
+    width: fit-content;
+
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+    text-underline-offset: 10px;
+}
+.bodyContainer {
+    padding-top: 180px;
+    width: 99%;
+}
+
+.home {
+    height: 800px;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+}
+.homeAtag {
+    color: #191919;
+}
+.about {
+    height: 800px;
+    background-color: skyblue;
+}
+.service {
+    height: 800px;
+    background-color: #0a2647;
+}
+.portfolio {
+    height: 800px;
+    background-color: #0a2647;
+}
+.blog {
+    height: 800px;
+    background-color: #0a2647;
+}
+.contact {
+    height: 800px;
+    background-color: #16213e;
+    text-align: none;
+}
+.warning {
+    color: red;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.aboutText {
+    width: 90%;
+}
+.serviceContainer {
+    padding-top: 70px;
+}
+.portfolioContainer {
+    padding-top: 70px;
+}
+.blogContainer {
+    padding-top: 70px;
+}
+.contactContainer {
+    padding-top: 70px;
+    max-height: 800px;
+}
+.contentAbout {
+    margin-left: 5%;
+    width: 100%;
+}
+/* .mainSkills {
+    position: absolute;
+    display: none;
+    height: 120px;
+    background-color: aqua;
+}
+.mainSkills:hover {
+    display: block;
+}
+.experience {
+    position: absolute;
+    height: 150px;
+    background-color: aqua;
+    display: none;
+}
+.certification {
+    position: absolute;
+    height: 150px;
+    background-color: aqua;
+    display: none;
+}
+.education {
+    position: absolute;
+    height: 150px;
+    background-color: aqua;
+    display: none;
+} */
+.hidden-div {
+    display: none;
+    cursor: pointer;
+}
+.click-text {
+    cursor: pointer;
+}
+.image {
+    width: 20%;
+}
