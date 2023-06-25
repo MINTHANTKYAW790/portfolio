@@ -50,10 +50,10 @@ function App() {
 
             <div id="about" className="about">
                 <div className="aboutContainer">
-                    <img
+                    {/* <img
                         className="image"
                         src={require("C:/Users/Dell/Documents/projects/frontend/src/haha.JPG")}
-                    />
+                    /> */}
 
                     <div className="contentAbout">
                         <h1 style={{ color: "white" }}>About Me</h1>
