@@ -1,12 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
-    <script
-        src="https://kit.fontawesome.com/ff5868ab46.js"
-        crossorigin="anonymous"
-    ></script>;
     var texts = [
         "HTML, CSS, JAVASCRIPT, TYPESCRIPT",
         "EXPRESS, NODE, REACT",
