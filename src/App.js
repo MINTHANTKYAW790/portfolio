@@ -74,12 +74,12 @@ function App() {
 
             <div id="about" className="about">
                 <div className="aboutContainer">
-                    <img
+                    {/*  <img
                         className="image"
                         src={process.env.PUBLIC_URL + "/haha.jpg"}
                         alt="myImage"
                     />
-
+ */}
                     <div className="contentAbout">
                         <h1 style={{ color: "white" }}>About Me</h1>
 
