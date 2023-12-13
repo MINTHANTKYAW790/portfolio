@@ -32,40 +32,25 @@ code {
     padding-left: 1%;
 }
 a {
-    height: 100%;
     width: fit-content;
-
     text-align: center;
     cursor: pointer;
-    padding-top: 10px;
+
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
-a:hover {
-    text-decoration: underline;
-
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: blue;
-    text-underline-offset: 10px;
-}
-.bodyContainer {
-    padding-top: 20%;
-    width: 99%;
+.homeAtag:hover {
+    border-bottom: 3px black solid;
+    padding-bottom: 0;
 }
 
-.home {
-    height: 800px;
-    background-color: #101010;
-    background-size: cover;
-}
 .homeAtag {
     color: #191919;
 }
 .about {
     height: 800px;
-    background-color: skyblue;
+    background-color: #101010;
 }
 .service {
     height: 800px;
@@ -155,4 +140,45 @@ a:hover {
 .transition {
     transition: all 0.5s ease;
     color: #f9004d;
+}
+
+.homeAtag {
+    text-decoration: none;
+    margin: 2px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer1 {
+    margin: 0;
+    padding: 0;
+}
+.home {
+    padding-top: -200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #101010;
+    background-size: cover;
+}
+.bodyContainer {
+    width: 50%;
+}
+.myphoto {
+    border-radius: 20%;
+    width: 20%;
+}
+h3 {
+    margin-bottom: 100px;
+}
+.aboutMe {
+    width: 80%;
+    font-size: x-large;
+    text-align: start;
+    color: #7f99a4;
+    word-spacing: 1px;
+    margin-left: 10%;
 }

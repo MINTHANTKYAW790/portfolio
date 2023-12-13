@@ -21,43 +21,43 @@ function App() {
 
     return (
         <div className="App">
-            <div id="home" className="home">
-                <div className="menuContainer1">
-                    <div className="menu">
-                        <a href="#home" className="homeAtag">
-                            Home
-                        </a>
-                    </div>
-                    <div className="menu">
-                        <a href="#about" className="homeAtag">
-                            About
-                        </a>
-                    </div>
-                    <div className="menu">
-                        <a href="#service" className="homeAtag">
-                            Service
-                        </a>
-                    </div>
-                    <div className="menu">
-                        <a href="#portfolio" className="homeAtag">
-                            Portfolio
-                        </a>
-                    </div>
-                    <div className="menu">
-                        <a href="#blog" className="homeAtag">
-                            Blog
-                        </a>
-                    </div>
-                    <div className="menu">
-                        <a href="#contact" className="homeAtag">
-                            Contact
-                        </a>
-                    </div>
+            <div className="menuContainer1">
+                <div className="menu">
+                    <a href="#home" className="homeAtag">
+                        Home
+                    </a>
                 </div>
+                <div className="menu">
+                    <a href="#about" className="homeAtag">
+                        About
+                    </a>
+                </div>
+                <div className="menu">
+                    <a href="#service" className="homeAtag">
+                        Service
+                    </a>
+                </div>
+                <div className="menu">
+                    <a href="#portfolio" className="homeAtag">
+                        Portfolio
+                    </a>
+                </div>
+                <div className="menu">
+                    <a href="#blog" className="homeAtag">
+                        Blog
+                    </a>
+                </div>
+                <div className="menu">
+                    <a href="#contact" className="homeAtag">
+                        Contact
+                    </a>
+                </div>
+            </div>
 
+            <div id="home" className="home">
                 <div className="bodyContainer">
                     <h3 style={{ color: "#7F99A4" }}>WELCOME TO MY WORLD</h3>
-                    <h1 style={{ color: "white" }}>HI,I'M MIN THANT KYAW</h1>
+                    <h1 style={{ color: "white" }}>HI, I'M MIN THANT KYAW</h1>
                     <h1 id="myElement" class="transition">
                         FRONTEND DEVELOPER
                     </h1>
@@ -65,6 +65,11 @@ function App() {
                         developer based in MYANMAR.
                     </h1>
                 </div>
+                <img
+                    src="https://media.licdn.com/dms/image/D5635AQHfLmmIbP5ukA/profile-framedphoto-shrink_200_200/0/1701939233473?e=1703095200&v=beta&t=XU8qFfDbMib-Wuu2A6Joto5z279eyOJSoVWgsngRwtA"
+                    alt="MinThantKyaw"
+                    class="myphoto"
+                ></img>
             </div>
 
             <div id="about" className="about">
@@ -78,7 +83,7 @@ function App() {
                     <div className="contentAbout">
                         <h1 style={{ color: "white" }}>About Me</h1>
 
-                        <h3 className="aboutText">
+                        <p className="aboutMe">
                             Hello! My name is Min Thant Kyaw. I am a frontend
                             programmer with a passion for html, css, javascript,
                             typescript, react and express.I've been learning
@@ -91,7 +96,7 @@ function App() {
                             questions or would like to connect, please don't
                             hesitate to reach out. I look forward to connect
                             with you! Best regards, Min Thant
-                        </h3>
+                        </p>
 
                         {/* <div className="menuContainer">
                             <div className="menu">
