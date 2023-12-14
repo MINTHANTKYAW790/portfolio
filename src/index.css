@@ -182,3 +182,31 @@ h3 {
     word-spacing: 1px;
     margin-left: 10%;
 }
+@media (max-width: 600px) {
+    .aboutMe {
+        font-size: medium;
+    }
+    .home {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .myphoto {
+        width: 50%;
+        margin-top: 25%;
+    }
+    .bodyContainer {
+        width: 100%;
+    }
+    h1 {
+        font-size: small;
+    }
+    #myElement {
+        padding: 0;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

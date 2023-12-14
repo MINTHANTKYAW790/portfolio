@@ -55,21 +55,23 @@ function App() {
             </div>
 
             <div id="home" className="home">
-                <div className="bodyContainer">
-                    <h3 style={{ color: "#7F99A4" }}>WELCOME TO MY WORLD</h3>
-                    <h1 style={{ color: "white" }}>HI, I'M MIN THANT KYAW</h1>
-                    <h1 id="myElement" class="transition">
-                        FRONTEND DEVELOPER
-                    </h1>
-                    <h1 style={{ color: "white" }}>
-                        developer based in MYANMAR.
-                    </h1>
-                </div>
                 <img
                     src="https://media.licdn.com/dms/image/D5635AQHfLmmIbP5ukA/profile-framedphoto-shrink_200_200/0/1701939233473?e=1703095200&v=beta&t=XU8qFfDbMib-Wuu2A6Joto5z279eyOJSoVWgsngRwtA"
                     alt="MinThantKyaw"
                     class="myphoto"
                 ></img>
+                <div className="bodyContainer">
+                    <h3 style={{ color: "#7F99A4", marginBottom: "45px" }}>
+                        WELCOME TO MY PORTFOLIO
+                    </h3>
+                    <h1 style={{ color: "white" }}>HI, I'M MIN THANT KYAW</h1>
+                    <h1 id="myElement" class="transition">
+                        FRONTEND DEVELOPER
+                    </h1>
+                    <p style={{ color: "white", fontSize: "x-large" }}>
+                        developer based in MYANMAR.
+                    </p>
+                </div>
             </div>
 
             <div id="about" className="about">
