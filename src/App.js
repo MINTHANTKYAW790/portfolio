@@ -195,9 +195,9 @@ function App() {
                     This website is still in the developing stage.{" "}
                     </h1>*/}
 
-                <div className="w-full  flex justify-center items-center flex-col max-md:w-full">
-                    <div className=" w-[70%] h-72 flex justify-around items-center mt-[20%] max-md:w-full ">
-                        <div className=" h-96 w-1/2  text-left pl-2">
+                <div className="contactContainer w-full  flex justify-center items-center flex-col max-md:w-full">
+                    <div className="contactContainer1 w-[70%] h-72 flex justify-around items-center mt-[20%] max-md:w-full ">
+                        <div className="contactContainer2 h-96 w-[50%]  text-left pl-2 max-md:w-full">
                             <h5 className="font-bold text-white">Contact us</h5>
                             <p className="text-gray-500">
                                 You're always welcome for any suggestion or just
@@ -221,7 +221,7 @@ function App() {
                             <p className="font-bold text-white">Contact Me</p>
                             <div className="flex w-full justify-between ">
                                 <FaFacebook
-                                    className="font-bold text-white cursor-pointer hover:text-green-400 transition duration-200 ease-in-out"
+                                    className="font-bold text-white cursor-pointer hover:text-blue-500 transition duration-200 ease-in-out"
                                     onClick={openFacebookPage}
                                 />
 
@@ -242,7 +242,8 @@ function App() {
                         <img
                             src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D"
                             alt="contact"
-                            className="w-[40%]  phone"
+                            class="phone"
+                            className="w-[40%] rounded max-md:w-[60%]"
                         ></img>
                     </div>
                 </div>
