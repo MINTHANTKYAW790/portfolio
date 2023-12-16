@@ -1,5 +1,11 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { MdOutgoingMail } from "react-icons/md";
+import { FaFacebook, FaLink } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
     var texts = [
@@ -18,6 +24,25 @@ function App() {
     }
 
     setInterval(changeText, 3000); // Change text every 2 seconds
+    const openFacebookPage = () => {
+        window.open(
+            "https://www.facebook.com/profile.php?id=100014963328058&mibextid=eHce3h",
+            "_blank"
+        );
+    };
+
+    const openInstagram = () => {
+        window.open(
+            "https://www.instagram.com/minthantkyaw02?igshid=MmVlMjlkMTBhMg==",
+            "_blank"
+        );
+    };
+    const openTelegram = () => {
+        window.open("https://t.me/mtkisyours", "_blank");
+    };
+    const openGithub = () => {
+        window.open("https://github.com/MINTHANTKYAW790", "_blank");
+    };
 
     return (
         <div className="App">
@@ -157,7 +182,7 @@ function App() {
             </div>
 
             <div id="contact" className="contact">
-                <div className="contactContainer">
+                {/* <div className="contactContainer">
                     <h1 style={{ color: "white", fontSize: "50px" }}>
                         Hire me.
                     </h1>
@@ -168,7 +193,59 @@ function App() {
                 </div>
                 <h1 className="warning">
                     This website is still in the developing stage.{" "}
-                </h1>
+                    </h1>*/}
+
+                <div className="w-full  flex justify-center items-center flex-col max-md:w-full">
+                    <div className=" w-[70%] h-72 flex justify-around items-center mt-[20%] max-md:w-full ">
+                        <div className=" h-96 w-1/2  text-left pl-2">
+                            <h5 className="font-bold text-white">Contact us</h5>
+                            <p className="text-gray-500">
+                                You're always welcome for any suggestion or just
+                                to have a chat
+                            </p>
+                            <h6 className="font-bold text-white">ADDRESS:</h6>
+                            <p className="text-gray-500">
+                                31930 ChinDwin Street, Pobba Thiri Township,
+                                Naypyitaw
+                            </p>
+                            <h6 className="font-bold text-white">EMAIL:</h6>
+                            <p className="text-gray-500">kthura397@gmail.com</p>
+                            <h6 className="font-bold text-white">PHONE:</h6>
+                            <p className="text-gray-500">09790717397</p>
+
+                            {/*<button className="bg-blue-600 mb-1 rounded border text-white font-bold p-2 flex justify-around items-center">
+                                <MdOutgoingMail />
+                                Send Email
+                            </button>*/}
+
+                            <p className="font-bold text-white">Contact Me</p>
+                            <div className="flex w-full justify-between ">
+                                <FaFacebook
+                                    className="font-bold text-white cursor-pointer hover:text-green-400 transition duration-200 ease-in-out"
+                                    onClick={openFacebookPage}
+                                />
+
+                                <FaInstagram
+                                    className="font-bold text-white"
+                                    onClick={openInstagram}
+                                />
+                                <FaTelegram
+                                    className="font-bold text-white"
+                                    onClick={openTelegram}
+                                />
+                                <FaGithub
+                                    className="font-bold text-white"
+                                    onClick={openGithub}
+                                />
+                            </div>
+                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D"
+                            alt="contact"
+                            className="w-[40%]  phone"
+                        ></img>
+                    </div>
+                </div>
             </div>
         </div>
     );
