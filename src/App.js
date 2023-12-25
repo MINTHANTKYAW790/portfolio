@@ -6,6 +6,7 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function App() {
     var texts = [
@@ -46,7 +47,7 @@ function App() {
 
     return (
         <div className="App">
-            <div className="menuContainer1">
+            <div className="menuContainer1 z-1000">
                 <div className="menu">
                     <a href="#home" className="homeAtag">
                         Home
@@ -181,70 +182,74 @@ function App() {
                 </h1>
             </div>
 
-            <div id="contact" className="contact">
-                {/* <div className="contactContainer">
-                    <h1 style={{ color: "white", fontSize: "50px" }}>
-                        Hire me.
-                    </h1>
-                    <h3 style={{ color: "white" }}>
-                        I am available for freelance work. Connect with me via
-                        phone: 09790717397 or email: kthura397@gmail.com
-                    </h3>
-                </div>
-                <h1 className="warning">
-                    This website is still in the developing stage.{" "}
-                    </h1>*/}
+            <div id="contact" className="contact ">
+                <h1 className="text-white py-[45px]">Contact</h1>
+                {/* This is the Contact Me section */}
+                <div className=" flex flex-col md:flex-row md:flex-6xl lg:mx-auto p-4 rounded-lg shadow-lg lg:space-x-5 ">
+                    {/* Left Div */}
 
-                <div className="contactContainer w-full  flex justify-center items-center flex-col max-md:w-full">
-                    <div className="contactContainer1 w-[70%] h-72 flex justify-around items-center mt-[20%] max-md:w-full ">
-                        <div className="contactContainer2 h-96 w-[50%]  text-left pl-2 max-md:w-full">
-                            <h5 className="font-bold text-white">Contact us</h5>
-                            <p className="text-gray-500">
-                                You're always welcome for any suggestion or just
-                                to have a chat
-                            </p>
-                            <h6 className="font-bold text-white">ADDRESS:</h6>
-                            <p className="text-gray-500">
-                                31930 ChinDwin Street, Pobba Thiri Township,
-                                Naypyitaw
-                            </p>
-                            <h6 className="font-bold text-white">EMAIL:</h6>
-                            <p className="text-gray-500">kthura397@gmail.com</p>
-                            <h6 className="font-bold text-white">PHONE:</h6>
-                            <p className="text-gray-500">09790717397</p>
+                    <div className="w-full  text-left pl-2 ">
+                        <h5 className="font-bold text-white">Contact us</h5>
+                        <p className="text-gray-500">
+                            You're always welcome for any suggestion or just to
+                            have a chat
+                        </p>
+                        <h6 className="font-bold text-white">ADDRESS:</h6>
+                        <p className="text-gray-500">
+                            31930 ChinDwin Street, Pobba Thiri Township,
+                            Naypyitaw
+                        </p>
+                        <h6 className="font-bold text-white">EMAIL:</h6>
+                        <p className="text-gray-500">kthura397@gmail.com</p>
+                        <h6 className="font-bold text-white">PHONE:</h6>
+                        <p className="text-gray-500">09790717397</p>
 
-                            {/*<button className="bg-blue-600 mb-1 rounded border text-white font-bold p-2 flex justify-around items-center">
+                        {/*<button className="bg-blue-600 mb-1 rounded border text-white font-bold p-2 flex justify-around items-center">
                                 <MdOutgoingMail />
                                 Send Email
                             </button>*/}
 
-                            <p className="font-bold text-white">Contact Me</p>
-                            <div className="flex w-full justify-between ">
-                                <FaFacebook
-                                    className="font-bold text-white cursor-pointer hover:text-blue-500 transition duration-200 ease-in-out"
-                                    onClick={openFacebookPage}
-                                />
+                        <p className="font-bold text-white">Contact Me</p>
+                        <div className="flex w-full justify-between ">
+                            <FaFacebook
+                                className=" text-3xl font-bold text-white cursor-pointer hover:text-blue-500 transition duration-200 ease-in-out"
+                                onClick={openFacebookPage}
+                            />
 
-                                <FaInstagram
-                                    className="font-bold text-white"
-                                    onClick={openInstagram}
-                                />
-                                <FaTelegram
-                                    className="font-bold text-white"
-                                    onClick={openTelegram}
-                                />
-                                <FaGithub
-                                    className="font-bold text-white"
-                                    onClick={openGithub}
-                                />
-                            </div>
+                            <FaInstagram
+                                className="font-bold text-white  text-3xl"
+                                onClick={openInstagram}
+                            />
+                            <FaTelegram
+                                className="font-bold text-white text-3xl"
+                                onClick={openTelegram}
+                            />
+                            <FaGithub
+                                className="font-bold text-white text-3xl"
+                                onClick={openGithub}
+                            />
                         </div>
-                        <img
-                            src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D"
-                            alt="contact"
-                            class="phone"
-                            className="w-[40%] rounded max-md:w-[60%]"
-                        ></img>
+                    </div>
+
+                    <div className=" w-full h-[200px] md:h-[400px] overflow-hidden mt-6 md:mt-0 md:ml-2">
+                        <MapContainer
+                            center={[22.126658024393745, 96.18775618151084]}
+                            zoom={13}
+                            scrollWheelZoom={false}
+                            style={{ height: "100%", width: "100%" }}
+                        >
+                            <TileLayer
+                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+                            <Marker
+                                position={[
+                                    22.126658024393745, 96.18775618151084,
+                                ]}
+                            >
+                                <Popup>My Current Address</Popup>
+                            </Marker>
+                        </MapContainer>
                     </div>
                 </div>
             </div>

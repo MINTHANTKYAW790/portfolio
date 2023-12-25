@@ -65,7 +65,6 @@ a {
     background-color: #0a2647;
 }
 .contact {
-    height: 800px;
     background-color: #16213e;
     text-align: none;
 }
@@ -224,4 +223,10 @@ h3 {
     .phone {
         width: 50%;
     }
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none;
 }
