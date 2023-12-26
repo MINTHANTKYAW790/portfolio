@@ -7,6 +7,7 @@ import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useState } from "react";
 
 function App() {
     var texts = [
@@ -44,6 +45,23 @@ function App() {
     const openGithub = () => {
         window.open("https://github.com/MINTHANTKYAW790", "_blank");
     };
+
+    //Onchange function for the send email inputs
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const { name, email, subject, message } = formData;
+    function onChange(e) {
+        setFormData((prevState) => ({
+            ...prevState,
+            [e.target.id]: e.target.value,
+        }));
+    }
 
     return (
         <div className="App">
@@ -194,22 +212,86 @@ function App() {
                             You're always welcome for any suggestion or just to
                             have a chat
                         </p>
-                        <h6 className="font-bold text-white">ADDRESS:</h6>
-                        <p className="text-gray-500">
-                            31930 ChinDwin Street, Pobba Thiri Township,
-                            Naypyitaw
-                        </p>
-                        <h6 className="font-bold text-white">EMAIL:</h6>
-                        <p className="text-gray-500">kthura397@gmail.com</p>
-                        <h6 className="font-bold text-white">PHONE:</h6>
-                        <p className="text-gray-500">09790717397</p>
+                        {/*Address Email Phone Div */}
+                        <div className=" flex flex-col md:flex-row md:flex-6xl lg:mx-auto  rounded-lg  lg:space-x-5 ">
+                            <div className="w-full  text-left ">
+                                <h6 className="font-bold text-white">
+                                    ADDRESS:
+                                </h6>
+                                <p className="text-gray-500">
+                                    31930 ChinDwin Street, Pobba Thiri Township,
+                                    Naypyitaw
+                                </p>
+                            </div>
+                            <div className="w-full  text-left ">
+                                <h6 className="font-bold text-white">EMAIL:</h6>
+                                <p className="text-gray-500">
+                                    kthura397@gmail.com
+                                </p>
+                            </div>
+                            <div className="w-full  text-left ">
+                                <h6 className="font-bold text-white">PHONE:</h6>
+                                <p className="text-gray-500">09790717397</p>
+                            </div>
+                        </div>
 
                         {/*<button className="bg-blue-600 mb-1 rounded border text-white font-bold p-2 flex justify-around items-center">
                                 <MdOutgoingMail />
                                 Send Email
                             </button>*/}
 
-                        <p className="font-bold text-white">Contact Me</p>
+                        <div className="flex flex-col w-full ">
+                            <div className="mt-3 mb-6">
+                                <input
+                                    name="name"
+                                    id="name"
+                                    rows="2"
+                                    vlaue={name}
+                                    onChange={onChange}
+                                    placeholder="Name"
+                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                ></input>
+                                <input
+                                    name="email"
+                                    id="email"
+                                    rows="2"
+                                    vlaue={email}
+                                    onChange={onChange}
+                                    placeholder="Email"
+                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                ></input>
+                                <input
+                                    name="subject"
+                                    id="subject"
+                                    rows="2"
+                                    vlaue={subject}
+                                    onChange={onChange}
+                                    placeholder="Subject"
+                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                ></input>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    rows="2"
+                                    vlaue={message}
+                                    onChange={onChange}
+                                    placeholder="message"
+                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                ></textarea>
+                            </div>
+                            <a
+                                href={`mailto:${name}?Subject=${subject}&body=${message}`}
+                            >
+                                <button
+                                    className="px-7 py-3 bg-blue-600 text-white rounded text-sm uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg active:shadow-lg active:bg-blue-700 transition duration-150 ease-in-out w-full text-center mb-6"
+                                    type="button"
+                                >
+                                    Send Message
+                                </button>
+                            </a>
+                        </div>
+
+                        <h5 className="font-bold text-white">Contact Me</h5>
                         <div className="flex w-full justify-between ">
                             <FaFacebook
                                 className=" text-3xl font-bold text-white cursor-pointer hover:text-blue-500 transition duration-200 ease-in-out"
@@ -230,7 +312,7 @@ function App() {
                             />
                         </div>
                     </div>
-
+                    {/* Right Div */}
                     <div className=" w-full h-[200px] md:h-[400px] overflow-hidden mt-6 md:mt-0 md:ml-2">
                         <MapContainer
                             center={[22.126658024393745, 96.18775618151084]}
