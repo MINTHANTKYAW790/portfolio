@@ -200,7 +200,7 @@ function App() {
             </div>
 
             <div id="contact" className="contact ">
-                <h1 className="text-white py-[45px]">Contact</h1>
+                <h1 className="text-white ">Contact</h1>
                 {/* This is the Contact Me section */}
                 <div className=" flex flex-col md:flex-row md:flex-6xl lg:mx-auto p-4 rounded-lg shadow-lg lg:space-x-5 ">
                     {/* Left Div */}
@@ -240,7 +240,7 @@ function App() {
                             </button>*/}
 
                         <div className="flex flex-col w-full ">
-                            <div className="mt-3 mb-6">
+                            <div className="mt-2 mb-1">
                                 <input
                                     name="email"
                                     id="email"
@@ -248,7 +248,7 @@ function App() {
                                     vlaue={email}
                                     onChange={onChange}
                                     placeholder="Email"
-                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#1d2a4d] focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-white bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-white focus:bg-[#1d2a4d] focus:border-slate-600"
                                 ></input>
                                 <input
                                     name="subject"
@@ -257,7 +257,7 @@ function App() {
                                     vlaue={subject}
                                     onChange={onChange}
                                     placeholder="Subject"
-                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#16213e] focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-white bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-white focus:bg-[#1d2a4d] focus:border-slate-600"
                                 ></input>
                                 <textarea
                                     name="message"
@@ -266,14 +266,14 @@ function App() {
                                     vlaue={message}
                                     onChange={onChange}
                                     placeholder="message"
-                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#16213e] focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-white bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-white focus:bg-[#1d2a4d] focus:border-slate-600"
                                 ></textarea>
                             </div>
                             <a
                                 href={`mailto:${myEmail}?Subject=${subject}&body=${message}`}
                             >
                                 <button
-                                    className="px-7 py-3 bg-blue-600 text-white rounded text-sm uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg active:shadow-lg active:bg-blue-700 transition duration-150 ease-in-out w-full text-center mb-6"
+                                    className="px-7 py-3 bg-blue-600 text-white rounded text-sm uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg active:shadow-lg active:bg-blue-700 transition duration-150 ease-in-out w-full text-center mb-4"
                                     type="button"
                                 >
                                     Send Message
@@ -281,7 +281,9 @@ function App() {
                             </a>
                         </div>
 
-                        <h5 className="font-bold text-white">Contact Me</h5>
+                        <h5 className="font-bold text-white mt-0">
+                            Contact Me
+                        </h5>
                         <div className="flex w-full justify-between ">
                             <FaFacebook
                                 className=" text-3xl font-bold text-white cursor-pointer hover:text-blue-500 transition duration-200 ease-in-out"
