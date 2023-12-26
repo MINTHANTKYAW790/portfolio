@@ -49,13 +49,12 @@ function App() {
     //Onchange function for the send email inputs
     const myEmail = "kthura397@gmail.com";
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
         subject: "",
         message: "",
     });
 
-    const { name, email, subject, message } = formData;
+    const { email, subject, message } = formData;
     function onChange(e) {
         setFormData((prevState) => ({
             ...prevState,
@@ -243,22 +242,13 @@ function App() {
                         <div className="flex flex-col w-full ">
                             <div className="mt-3 mb-6">
                                 <input
-                                    name="name"
-                                    id="name"
-                                    rows="2"
-                                    vlaue={name}
-                                    onChange={onChange}
-                                    placeholder="Name"
-                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
-                                ></input>
-                                <input
                                     name="email"
                                     id="email"
                                     rows="2"
                                     vlaue={email}
                                     onChange={onChange}
                                     placeholder="Email"
-                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#1d2a4d] focus:border-slate-600"
                                 ></input>
                                 <input
                                     name="subject"
@@ -267,7 +257,7 @@ function App() {
                                     vlaue={subject}
                                     onChange={onChange}
                                     placeholder="Subject"
-                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#16213e] focus:border-slate-600"
                                 ></input>
                                 <textarea
                                     name="message"
@@ -276,7 +266,7 @@ function App() {
                                     vlaue={message}
                                     onChange={onChange}
                                     placeholder="message"
-                                    className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600"
+                                    className="w-full px-3 py-1 text-xl mt-2 text-gray-700 bg-[#16213e] border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-[#16213e] focus:border-slate-600"
                                 ></textarea>
                             </div>
                             <a
