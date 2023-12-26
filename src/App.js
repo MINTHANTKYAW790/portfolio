@@ -47,7 +47,7 @@ function App() {
     };
 
     //Onchange function for the send email inputs
-
+    const myEmail = "kthura397@gmail.com";
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -280,7 +280,7 @@ function App() {
                                 ></textarea>
                             </div>
                             <a
-                                href={`mailto:${"kthura397@gmail.com"}&Subject=${subject}&body=${message}`}
+                                href={`mailto:${myEmail}&Subject=${subject}&body=${message}`}
                             >
                                 <button
                                     className="px-7 py-3 bg-blue-600 text-white rounded text-sm uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg active:shadow-lg active:bg-blue-700 transition duration-150 ease-in-out w-full text-center mb-6"
