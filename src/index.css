@@ -48,14 +48,7 @@ a {
 .homeAtag {
     color: #191919;
 }
-.about {
-    height: 800px;
-    background-color: #101010;
-}
-.service {
-    height: 800px;
-    background-color: #0a2647;
-}
+
 .portfolio {
     height: 800px;
     background-color: #0a2647;
@@ -72,15 +65,6 @@ a {
     color: red;
 }
 
-.aboutContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 70px;
-}
-.aboutText {
-    width: 90%;
-}
 .serviceContainer {
     padding-top: 70px;
 }
@@ -91,37 +75,6 @@ a {
     padding-top: 70px;
 }
 
-.contentAbout {
-    margin-left: 5%;
-    width: 100%;
-}
-/* .mainSkills {
-    position: absolute;
-    display: none;
-    height: 120px;
-    background-color: aqua;
-}
-.mainSkills:hover {
-    display: block;
-}
-.experience {
-    position: absolute;
-    height: 150px;
-    background-color: aqua;
-    display: none;
-}
-.certification {
-    position: absolute;
-    height: 150px;
-    background-color: aqua;
-    display: none;
-}
-.education {
-    position: absolute;
-    height: 150px;
-    background-color: aqua;
-    display: none;
-} */
 .hidden-div {
     display: none;
     cursor: pointer;
@@ -152,13 +105,11 @@ a {
     padding: 0;
 }
 .home {
-    padding-top: -200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
     background-color: #101010;
-    background-size: cover;
 }
 .bodyContainer {
     width: 50%;
