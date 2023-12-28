@@ -10,6 +10,12 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useState } from "react";
 import myphoto from "../src/myphoto.jpg";
 import myphotowithflower from "../src/myphotowithflower.jpg";
+import pj1 from "../src/pj1.png";
+import pj2 from "../src/pj2.png";
+import pj3 from "../src/pj3.png";
+import ob from "../src/ob.png";
+import ob2 from "../src/ob2.png";
+import ob3 from "../src/ob3.png";
 import Profile from "../src/Profile.pdf";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
@@ -109,11 +115,7 @@ function App() {
                         Projects
                     </a>
                 </div>
-                <div className="menu">
-                    <a href="#blog" className="homeAtag">
-                        Blog
-                    </a>
-                </div>
+
                 <div className="menu">
                     <a href="#contact" className="homeAtag">
                         Contact
@@ -126,7 +128,7 @@ function App() {
                     <img
                         src={myphoto}
                         alt="MinThantKyaw"
-                        class="w-full md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 "
+                        class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 "
                     ></img>
                     <div className="bodyContainer">
                         <h3 style={{ color: "#7F99A4", marginBottom: "45px" }}>
@@ -145,10 +147,10 @@ function App() {
                 </div>
 
                 {/* This is the start of the ABOUT tag */}
-                <div id="about" className="h-[800px] bg-[#0a2647] ">
-                    <h1 className="text-white pt-[100px]">About Me</h1>
-                    <div className="w-full flex justify-around items-center space-x-2">
-                        <span className="w-full md:text-xl md:w-[40%] sm:text-sm lg:w-[40%] rounded-lg mt-10 text-white    ">
+                <div id="about" className="h-[800px] bg-[#16213E] ">
+                    <h1 className="text-white pt-[50px]">About Me</h1>
+                    <div className="w-full flex justify-around items-center space-x-2 max-sm:flex-col  ">
+                        <span className="w-full md:text-xl md:w-[50%] sm:text-sm lg:w-[50%] rounded-lg mt-10 text-white text-start mb-2     ">
                             Hello! My name is Min Thant Kyaw. I am a frontend
                             programmer with a passion for html, css, javascript,
                             typescript, react and express.I've been learning
@@ -162,63 +164,62 @@ function App() {
                             hesitate to reach out. I look forward to connect
                             with you! Best regards, Min Thant
                         </span>
-
                         <img
                             src={myphotowithflower}
                             alt="myphotowithflower"
-                            className="w-full md:w-[50%] lg:w-[20%] rounded-lg overflow-hidden"
+                            className="w-full max-sm:w-[35%] sm:overflow-hidden md:w-[28%] lg:w-[28%] rounded-lg overflow-hidden"
                         ></img>
                     </div>
                 </div>
 
                 {/* This is the start of the SKILL tag */}
-                <div id="skills" className="h-[800px] bg-[#0a2647]">
-                    <h1 className="pt-[100px] text-white ">Skills</h1>
-                    <div className="sm:grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 p-3">
-                        <div className=" flex space-x-4 border-black border-b-2  sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3 ">
-                            <FaHtml5 className="text-white text-3xl" />
+                <div id="skills" className="h-[800px] bg-[#16213E]">
+                    <h1 className="pt-[50px] text-white ">Skills</h1>
+                    <div className="sm:grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 p-3">
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1 ">
+                            <FaHtml5 className=" text-[#DD4B25] text-3xl" />
                             <p className="text-white">HTML</p>
                         </div>
 
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <IoLogoCss3 className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <IoLogoCss3 className="text-[#3595CF] text-3xl" />
                             <p className="text-white">CSS</p>
                         </div>
 
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <IoLogoJavascript className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <IoLogoJavascript className="text-[#E8D44D] text-3xl" />
                             <p className="text-white">Javascript</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <FaBootstrap className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <FaBootstrap className="text-[#8011F5] text-3xl" />
                             <p className="text-white">Bootstrap</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <SiTailwindcss className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <SiTailwindcss className="text-[#36B6F2] text-3xl" />
                             <p className="text-white">Tailwind</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <FaPython className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <FaPython className="text-[#376F9F] text-3xl" />
                             <p className="text-white">Python</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <IoLogoAndroid className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <IoLogoAndroid className="text-[#9FC337] text-3xl" />
                             <p className="text-white">Android</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <FaReact className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <FaReact className="text-[#06C9EB] text-3xl" />
                             <p className="text-white">React</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <IoLogoFirebase className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <IoLogoFirebase className="text-[#F7C327] text-3xl" />
                             <p className="text-white">Firebase</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <FaGitAlt className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <FaGitAlt className="text-[#E84D31] text-3xl" />
                             <p className="text-white">Git</p>
                         </div>
-                        <div className=" flex space-x-4 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:m-1 md:m-2 lg:m-3">
-                            <FaNpm className="text-white text-3xl" />
+                        <div className=" flex space-x-4 mt-2 border-black border-b-2 sm:py-1 md:py-2 lg:py-3 sm:mt-5 max-md:mb-1 lg:mb-1 mx-1">
+                            <FaNpm className="text-[#DC2D35] text-3xl" />
                             <p className="text-white">NPM</p>
                         </div>
                     </div>
@@ -236,14 +237,46 @@ function App() {
                 {/* This is the start of the PROJECTS tag */}
                 <div
                     id="projects"
-                    className="h-[800px] bg-[#0a2647] text-start"
+                    className="h-[800px] bg-[#16213E] text-start"
                 >
-                    <h1 className="text-white pt-[100px] pl-5">My Projects</h1>
-                    <p className="text-white pl-5 text-xl">
+                    <h1 className="text-white pt-[50px] pl-5">My Projects</h1>
+                    <p className="text-white px-4 text-xl">
                         These are some of my favorite projects. I'm always
                         looking for fun challenges to learn from. Any feedback
                         is also appreciated!
                     </p>
+                    <div className="flex flex-col">
+                        <a
+                            href="https://realtor-clone-react-tau-six.vercel.app/"
+                            className="flex pl-5 space-x-2  "
+                        >
+                            <img
+                                src={pj1}
+                                alt="MinThantKyaw"
+                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                            ></img>
+                            <img
+                                src={pj2}
+                                alt="MinThantKyaw"
+                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                            ></img>
+                        </a>
+                        <a
+                            href="https://realtor-clone-react-tau-six.vercel.app/"
+                            className="flex pl-5 space-x-2 mt-3"
+                        >
+                            <img
+                                src={ob}
+                                alt="MinThantKyaw"
+                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                            ></img>
+                            <img
+                                src={ob2}
+                                alt="MinThantKyaw"
+                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                            ></img>
+                        </a>
+                    </div>
                     {/** <Swiper
                         slidesPerView={1}
                         navigation
@@ -273,21 +306,9 @@ function App() {
                     </Swiper>*/}
                 </div>
 
-                {/* This is the start of the BLOG tag */}
-                <div id="blog" className="blog">
-                    <div className="blogContainer">
-                        <h1 style={{ color: "white", fontSize: "50px" }}>
-                            Blog comming sooon..
-                        </h1>
-                    </div>
-                    <h1 className="warning">
-                        This website is still in the developing stage.{" "}
-                    </h1>
-                </div>
-
                 {/* This is the start of the CONTACT tag */}
                 <div id="contact" className="contact ">
-                    <h1 className="text-white ">Contact</h1>
+                    <h1 className="text-white pt-[50px]">Contact</h1>
                     {/* This is the Contact Me section */}
                     <div className=" flex flex-col md:flex-row md:flex-6xl lg:mx-auto p-4 rounded-lg shadow-lg lg:space-x-5 ">
                         {/* Left Div */}
