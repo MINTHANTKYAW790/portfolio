@@ -248,32 +248,34 @@ function App() {
                     <div className="flex flex-col">
                         <a
                             href="https://realtor-clone-react-tau-six.vercel.app/"
-                            className="flex pl-5 space-x-2  "
+                            className="flex pl-5 space-x-4  "
                         >
                             <img
                                 src={pj1}
                                 alt="MinThantKyaw"
-                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                                class="hover:scale-105 w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-200 ease-in-out"
                             ></img>
+
                             <img
                                 src={pj2}
                                 alt="MinThantKyaw"
-                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                                class="hover:scale-105 w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-200 ease-in-out"
                             ></img>
                         </a>
                         <a
                             href="https://realtor-clone-react-tau-six.vercel.app/"
-                            className="flex pl-5 space-x-2 mt-3"
+                            className="flex pl-5 space-x-4 mt-3"
                         >
                             <img
                                 src={ob}
                                 alt="MinThantKyaw"
-                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                                class="hover:scale-105 w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-200 ease-in-out"
                             ></img>
+
                             <img
                                 src={ob2}
                                 alt="MinThantKyaw"
-                                class="w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-75 ease-in-out"
+                                class="hover:scale-105 w-full max-sm:w-[40%] md:w-[50%] lg:w-[28%] rounded overflow-hidden pt-2 hover:shadow-2xl transition duration-200 ease-in-out"
                             ></img>
                         </a>
                     </div>
